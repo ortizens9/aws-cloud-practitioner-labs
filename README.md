@@ -1,5 +1,5 @@
 # aws-cloud-practitioner-labs
-#Lab 1: Crar un bucket S3 en AWS
+#Lab 1-S3-bucket: Crar un bucket S3 en AWS
 
 #Objetivo
 Aprender a crear un bucket en S3 y subir un archivo
