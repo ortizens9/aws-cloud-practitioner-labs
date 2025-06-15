@@ -13,12 +13,15 @@ Aprender a crear un bucket en S3 y subir un archivo
  -Ponerle un nombre, yo le he puesto mi-bucket-ortizens9-2025 [Poniendo el nombre](/AWS-labs/lab-1-s3-bucket/capturas/1.png)
  
  -Acordarse siempre de en qué zona lo creamos en mi caso eu-north-1
- -Por ahora dejamos bloqueado todo el acceso público y desactivadas
-  también las versiones de bucket
+ 
+ -Por ahora dejamos bloqueado todo el acceso público y desactivadas, también las versiones de bucket
+ [Desactivado acceso público](/AWS-labs/lab-1-s3-bucket/capturas/3.png)
   
 2.**Subir archivo**:
- -Entramos en el bucket, le damos a "Cargar(upload)"
- -Añadir archivos, vamos al directorio donde tenemos el archivo holamundo.txt y lo subimos
 
-##Conclusón
+ -Entramos en el bucket, le damos a "Cargar(upload)"  [Cargar](/AWS-labs/lab-1-s3-bucket/capturas/5.png)
+ 
+ -Añadir archivos, vamos al directorio donde tenemos el archivo holamundo.txt y lo subimos [holamundo](/AWS-labs/lab-1-s3-bucket/capturas/6.png)
+
+##Conclusión:
 He aprendido a usar S3 para almacenar objetos.
