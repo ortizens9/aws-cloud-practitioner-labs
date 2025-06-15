@@ -5,6 +5,7 @@
 Aprender a crear un bucket en S3 y subir un archivo
 
 ##Pasos
+
 1.**Crear el bucket**:
  -Ir al servicio S3 en la consola de AWS
  -Hacer clic en "Crear bucket(Create bucket)"
@@ -12,6 +13,7 @@ Aprender a crear un bucket en S3 y subir un archivo
  -Acordarse siempre de en qué zona lo creamos en mi caso eu-north-1
  -Por ahora dejamos bloquado todo el acceso público y desactivadas
   también las versiones de bucket
+  
 2.**Subir archivo**:
  -Entramos en el bucket, le damos a "Cargar(upload)"
  -Añadir archivos, vamos al directorio donde tenemos el archivo holamundo.txt y lo subimos
