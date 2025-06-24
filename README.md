@@ -28,13 +28,20 @@ He aprendido a usar S3 para almacenar objetos.
 
 ## Lab 2-Lanzar instancia EC2 y conectarse vía SSH
 #Objetivo: Entender servidores virtuales y acceso remoto
+
 1.**Lanzar instancia EC2**
 -Para ello con nuestro usuario IAM(creado con todos los permisos) nos vas al servicio EC2, en EC2 clicamos en Lanzar instancias.
+
 Escogemos una sencilla, en este caso una Amazon Linux, t2 micro, le creamos una clave RSA y de formato .pem ya que estamos desde Windows.
 Permitimos el acceso de trático SSH y la creamos.
+
 2.**Conexión SSH**
 -Ahora desde la terminal que tengamos y estando en la caepeta donde hemos guardado nuestra clave pem escribimos: ssh.exe -i claveslab2.pem ec2-user@35.180.140.117 (que es la IP de nuestra instancia EC2)
-Puede pasar como es el caso que nos diga que no tenemos permiso para acceder a la clave. tendremos que desactivar los permisos de herencia desde propiedades y dárselos únicamente al usuario con el que vamos a hacer la operación. Yéndonos a propiedades->seguridad, luego a cambiar,y luego a deshabilitar herencia->convertir los permisos heredados en permisos explícitos en este objeto y borrarlos hasta únicamente dejar los de mi usuario. Esto ya nos dejará entrar a la instancia vía SSH.
+
+Puede pasar como es el caso que nos diga que no tenemos permiso para acceder a la clave. tendremos que desactivar los permisos de herencia desde propiedades y dárselos únicamente al usuario con el que vamos a hacer la operación. Yéndonos a propiedades->seguridad, luego a cambiar,
+
+y luego a deshabilitar herencia->convertir los permisos heredados en permisos explícitos en este objeto y borrarlos hasta únicamente dejar los de mi usuario. Esto ya nos dejará entrar a la instancia vía SSH.
+
 3.**Instalar servidor web**
 -Ejecutamos el comando: sudo yum install httpd -y y se nos instalará.
 
