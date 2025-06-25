@@ -7,6 +7,7 @@ Aprender a crear un bucket en S3 y subir un archivo
 ##Pasos
 
 1.**Crear el bucket**:
+
  -Ir al servicio S3 en la consola de AWS
  -Hacer clic en "Crear bucket(Create bucket)" [Captura de Consola AWS](/AWS-labs/lab-1-s3-bucket/capturas/2.png)
  
@@ -30,11 +31,13 @@ He aprendido a usar S3 para almacenar objetos.
 #Objetivo: Entender servidores virtuales y acceso remoto
 
 1.**Lanzar instancia EC2**
+
 -Para ello con nuestro usuario IAM(creado con todos los permisos) nos vas al servicio EC2, en EC2 clicamos en [Lanzar Instancias EC2](AWS-labs/lab-2-ecd-ssh/1.png)
 Escogemos una sencilla, en este caso una [Amazon Linux/t2 micro](AWS-labs/lab-2-ecd-ssh/2.png) le creamos una [clave RSA](AWS-labs/lab-2-ecd-ssh/3.png) y de formato .pem ya que estamos desde Windows.
 [Permitimos el acceso de trático SSH](AWS-labs/lab-2-ecd-ssh/4.png) y la creamos.
 
 2.**Conexión SSH**
+
 -Ahora desde la [terminal](AWS-labs/lab-2-ecd-ssh/6.png) que tengamos y estando en la carpeta donde hemos guardado nuestra clave pem escribimos: ssh.exe -i claveslab2.pem ec2-user@35.180.140.117 (que es la IP de nuestra instancia EC2)
 
 Puede pasar como es el caso que nos diga que no tenemos permiso para acceder a la clave. Tendremos que desactivar los permisos de herencia desde propiedades y dárselos únicamente al usuario con el que vamos a hacer la operación. Yéndonos a [propiedades->seguridad](AWS-labs/lab-2-ecd-ssh/7.png), luego a [cambiar](AWS-labs/lab-2-ecd-ssh/8.png),[2](AWS-labs/lab-2-ecd-ssh/9.png)
