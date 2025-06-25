@@ -45,5 +45,6 @@ Puede pasar como es el caso que nos diga que no tenemos permiso para acceder a l
 y luego a deshabilitar herencia->[convertir los permisos heredados en permisos explícitos en este objeto](AWS-labs/lab-2-ecd-ssh/10.png) y borrarlos hasta únicamente dejar los de [mi usuario](AWS-labs/lab-2-ecd-ssh/11.png). Esto ya nos dejará entrar a la instancia [vía SSH](AWS-labs/lab-2-ecd-ssh/13.png).
 
 3.**Instalar servidor web**
+
 -Ejecutamos el comando: [sudo yum install httpd -y](AWS-labs/lab-2-ecd-ssh/15.png) y se nos [instalará](AWS-labs/lab-2-ecd-ssh/16.png).
 
