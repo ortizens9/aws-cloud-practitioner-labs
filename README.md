@@ -61,8 +61,8 @@ Vamos al [servicio IAM](AWS-labs/lab-3-iamclicloudwatch/1.png)->Personas->Crear 
 Esto nos genera una clave (que no debemos compartir bajo ningún concepto, ya que supondría un fallo de seguridad).
 Después de haber bajado AWS CLI para nuestro PC en mi caso Windows.
 
--Nos conectamos vía [CLI en el powershell](AWS-labs/lab-3-iamclicloudwatch/7.png) o cmd de nuestro PC, con el comando aws configure --profile Pepe. Nos preguntará por nuestra clave ID, por la clave de acceso secreta, la región donde nos queremos conectar:eu-west-3 y el formato de salida: json.
--Usamos el comando: aws cloudwatch list-metrics --namespace AWS/EC2 --region eu-west-3 --profile Pepe --output table y nos daria [esta respuesta](AWS-labs/lab-3-iamclicloudwatch/8.png)
+-Nos conectamos vía [CLI en el powershell](AWS-labs/lab-3-iamclicloudwatch/7.png) o cmd de nuestro PC, con el comando _aws configure --profile Pepe_. Nos preguntará por nuestra clave ID, por la clave de acceso secreta, la región donde nos queremos conectar:eu-west-3 y el formato de salida: json.
+-Usamos el comando: _aws cloudwatch list-metrics --namespace AWS/EC2 --region eu-west-3 --profile Pepe --output table_ y nos daria [esta respuesta](AWS-labs/lab-3-iamclicloudwatch/8.png)
 
 -[¿Qué es lo que pasaria si borrasemos los permisos?](AWS-labs/lab-3-iamclicloudwatch/9.png) Nos daría [este error](AWS-labs/lab-3-iamclicloudwatch/10.png), de esta manera vemos que hay que actuar con el principio de mínimo privilegio.
 
