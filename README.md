@@ -58,7 +58,8 @@ Vamos al [servicio IAM](AWS-labs/lab-3-iamclicloudwatch/1.png)->Personas->Crear 
 -[Creamos un nuevo grupo](AWS-labs/lab-3-iamclicloudwatch/3.png) y le adjuntamos los permisos que queremos que tenga este usuario. En este caso [CloudWatchReadOnlyAccess](AWS-labs/lab-3-iamclicloudwatch/4.png).
 
 -Vamos al usuario creado y en la pestaña credenciales de seguridad, vamos donde dice: [Claves de acceso](AWS-labs/lab-3-iamclicloudwatch/5.png). Le damos a crear[(Interfaz Línea de comandos/CLI)](AWS-labs/lab-3-iamclicloudwatch/6.png).
-Esto nos genera una clave(que no debemos compartir bajo ningún concepto, ya que supondría un fallo de seguridad). Después de haber bajado AWS CLI para nuestro PC en mi caso Windows.
+Esto nos genera una clave (que no debemos compartir bajo ningún concepto, ya que supondría un fallo de seguridad).
+Después de haber bajado AWS CLI para nuestro PC en mi caso Windows.
 
 -Nos conectamos vía [CLI en el powershell](AWS-labs/lab-3-iamclicloudwatch/7.png) o cmd de nuestro PC, con el comando aws configure --profile Pepe. Nos preguntará por nuestra clave ID, por la clave de acceso secreta, la región donde nos queremos conectar:eu-west-3 y el formato de salida: json.
 -Usamos el comando: aws cloudwatch list-metrics --namespace AWS/EC2 --region eu-west-3 --profile Pepe --output table y nos daria [esta respuesta](AWS-labs/lab-3-iamclicloudwatch/8.png)
