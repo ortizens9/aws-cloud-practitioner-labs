@@ -70,7 +70,7 @@ Después de haber bajado AWS CLI para nuestro PC en mi caso Windows.
 
 1.**Lanzar 2 instancias EC2 diferentes**
 
--Antes que nada vamos a crear unos textos diferentes para [una instancia y otra](AWS-labs/lab-4-ELB+ASG/31.png)
+-Antes que nada vamos a crear unos textos diferentes para [una instancia y otra](AWS-labs/lab-4-ELB+ASG/31.png).
   
 -Vamos al servicio EC2 en nuestra cuenta IAM en la consola AWS y hacemos clic en [Lanzar instancias](AWS-labs/lab-4-ELB+ASG/1.png) de Ubuntu server 24.04. Le damos un nombre "Mi instancia 1".
  La vamos a crear sin par de claves pese a que ya sabemos que no es lo recomendado.
