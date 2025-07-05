@@ -97,4 +97,5 @@ Ahora Launch Template crea 2 instancias nuevas que sustituyen a las que ya tení
 5.**Instance connect**
 
 -Una vez configurado si voy a una de mis instancias y la selecciono, puedo darle donde dice conectar, una vez [nos conectemos con IP pública](AWS-labs/lab-4-ELB+ASG/25.png) podremos entrar vía Instance Connect. [Una vez dentro](AWS-labs/lab-4-ELB+ASG/26.png) hacemos un _sudo apt-get update && sudo apt-get install_ -y _stress-ng_. Una vez tengamos instalado stress-ng, lo ejecutamos [durante 5 minutos](AWS-labs/lab-4-ELB+ASG/28.png) con el comando _stress-ng --cpu 1 --timeout 300s_. Esto hará que a parte de las instancias que tenemos [se creará otra más](AWS-labs/lab-4-ELB+ASG/29.png)(se escalará a 3). Se autoescalará debido a stress-ng porque superará el 70% de CPU.
-Con esto creamos un servicio altamente disponible con EC2, ELB y ASG.
+
+#Con esto creamos un servicio altamente disponible con EC2, ELB y ASG.
