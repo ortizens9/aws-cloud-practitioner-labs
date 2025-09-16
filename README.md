@@ -1,5 +1,5 @@
 # AWS-Cloud-Practitioner-Labs
-# AWS-labs: 
+# AWS-Labs: 
 Labs propios para practicar. Clica encima uno para acceder.
 ## [Lab 1- S3-bucket: Crear un bucket S3 en AWS](./AWS-labs/lab-1-s3-bucket)
 En este Lab aprendemos a crear un bucket S3 y a subir un archivo.
@@ -10,7 +10,7 @@ En este, monitorizamos a través de Cloudwatch y accedemos con la CLI
 ## [Lab 4 - ELB(Balanceador de carga) + Auto Scaling Group](./AWS-labs/lab-4-ELB+ASG)
 Creamos instancias diferentes con mensajes diferentes, usamos el ALB y ASG. Finalmente nos conectamos con Instace Connect.
 
-# AWS-labs-oficiales
+# AWS-Labs-oficiales
 Labs de Skill builder.
 ## [Lab 1- Introduction to Amazon VLC](./AWS-labs-oficiales/Lab1-IntroductiontoVLC)
 Nos introduce y explica lo más importante de una VPC: Gateways, tablas de enrutamiento, ACLs. Y diferenciamos una Private Cloud de una VPC.
