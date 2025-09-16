@@ -9,7 +9,7 @@ Así repaso yo también un poco que desde verano que no miro nada de esto.
 
 <ins> **Diferencias entre Private Cloud(Nube privada) vs Virtual Private Cloud(Nube Privada Virtual)** </ins>
 
-·**Una nube privada** es una infraestructura dedicada a una sola organización. Esta puede ser on-premise(en tu hardware físico) o alojada por un tercero, pero esta **no se comparte con nadie**, es de un tenedor. Tu te ocupas completamente de el mantenimiento, el costo es elevado y tienes el control total.
+·**Una nube privada** es una infraestructura dedicada a una sola organización. Esta puede ser on-premise(en tu hardware físico) o alojada por un tercero, pero esta **no se comparte con nadie**, es de un tenedor. Tu te ocupas completamente del mantenimiento, el costo es elevado y tienes el control total.
 
 ·**La Virtual Private Cloud** es una nube privada pero está aislada dentro de una nube pública. Tu red es privada pero el hardware **es compartido**, es de múltiples tenedores(diferentes empresas, etc).
 Su costo es bajo, pagas por lo que usas y el mantenimiento lo hace el proveedor, ya sea AWS, Azure en el caso de Microsoft o Google en el caso de GDP. Tienes el control total a nivel lógico.
