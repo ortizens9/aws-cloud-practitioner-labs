@@ -1,6 +1,6 @@
 # aws-cloud-practitioner-labs
 # AWS-labs: 
-Labs propios para practicar.
+Labs propios para practicar. Clica encima uno para acceder.
 ## [Lab 1- S3-bucket: Crear un bucket S3 en AWS](./AWS-labs/lab-1-s3-bucket)
 En este Lab aprendemos a crear un bucket S3 y a subir un archivo.
 ## [Lab 2- Lanzar instancia EC2 y conectarse vía SSH](./AWS-labs/lab-2-ecd-ssh)
