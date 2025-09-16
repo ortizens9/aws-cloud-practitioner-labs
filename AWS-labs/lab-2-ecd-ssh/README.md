@@ -3,7 +3,7 @@
 
 1.**Lanzar instancia EC2**
 
--Para ello con nuestro usuario IAM(creado con todos los permisos) nos vas al servicio EC2, en EC2 clicamos en [Lanzar Instancias EC2](/AWS-labs/lab-2-ecd-ssh/Capturas/1.png)
+-Para ello con nuestro usuario IAM(creado con todos los permisos) nos vas al servicio EC2, en EC2 clicamos en [lanzar Instancias EC2](/AWS-labs/lab-2-ecd-ssh/Capturas/1.png)
 Escogemos una sencilla, en este caso una [Amazon Linux/t2 micro](/AWS-labs/lab-2-ecd-ssh/Capturas/2.png) le creamos una [clave RSA](/AWS-labs/lab-2-ecd-ssh/Capturas/3.png) y de formato .pem ya que estamos desde Windows.
 [Permitimos el acceso de trático SSH](/AWS-labs/lab-2-ecd-ssh/Capturas/4.png) y la creamos.
 
