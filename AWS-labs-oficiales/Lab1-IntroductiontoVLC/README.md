@@ -1,12 +1,13 @@
 # [Introduction to Amazon Virtual Private Cloud](AWS-labs-oficiales/Lab1-IntroductiontoVLC/Capturas/1.png)
 Acabo de hacer un Lab de Amazon llamado [_“Introduction to Amazon VPC”_](AWS-labs-oficiales/Lab1-IntroductiontoVLC/Capturas/2.png).
-Para que tanto vosotros como yo, vayamos entendiendo qué hacemos y que nos pide y qué estamos viendo. Que ya de por si nos da unas instrucciones. Voy a explicar mejor algunos conceptos.
+Para que tanto vosotros como yo, vayamos entendiendo qué hacemos y qué nos pide y qué estamos viendo. Que ya de por si nos da unas instrucciones. Voy a explicar mejor algunos conceptos.
 Así repaso yo también un poco que desde verano que no miro nada de esto.
 ## El primer objetivo de este lab es crear la VPC con el asistente de VPC
 
 ·**Una VPC** es una nube privada, donde los clientes pueden hacer lo que podrían hacer en una nube privada normal, pero esta nube está alojada en la nube.
 
 <ins> Diferencias entre Private Cloud(Nube privada) vs Virtual Private Cloud(Nube Privada Virtual)</ins>
+
 ·**Una nube privada** es una infraestructura dedicada a una sola organización. Esta puede ser on-premise(en tu hardware físico) o alojada por un tercero, pero esta **no se comparte con nadie**, es de un tenedor. Tu te ocupas completamente de el mantenimiento, el costo es elevado y tienes el control total.
 ·**La Virtual Private Cloud** es una nube privada pero está aislada dentro de una nube pública. Tu red es privada pero el hardware **es compartido**, es de múltiples tenedores(diferentes empresas, etc).
 Su costo es bajo, pagas por lo que usas y el mantenimiento lo hace el proveedor, ya sea AWS, Azure en el caso de Microsoft o Google en el caso de GDP. Tienes el control total a nivel lógico.
