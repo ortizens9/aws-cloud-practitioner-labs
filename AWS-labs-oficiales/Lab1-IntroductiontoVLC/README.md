@@ -9,12 +9,15 @@ Así repaso yo también un poco que desde verano que no miro nada de esto.
 <ins> **Diferencias entre Private Cloud(Nube privada) vs Virtual Private Cloud(Nube Privada Virtual)** </ins>
 
 ·**Una nube privada** es una infraestructura dedicada a una sola organización. Esta puede ser on-premise(en tu hardware físico) o alojada por un tercero, pero esta **no se comparte con nadie**, es de un tenedor. Tu te ocupas completamente de el mantenimiento, el costo es elevado y tienes el control total.
+
 ·**La Virtual Private Cloud** es una nube privada pero está aislada dentro de una nube pública. Tu red es privada pero el hardware **es compartido**, es de múltiples tenedores(diferentes empresas, etc).
 Su costo es bajo, pagas por lo que usas y el mantenimiento lo hace el proveedor, ya sea AWS, Azure en el caso de Microsoft o Google en el caso de GDP. Tienes el control total a nivel lógico.
+
 Cada VPC tiene su bloque CIDR(Enrutamiento entre dominios sin clase) de IPs privadas, **este bloque grande**, lo divides en subredes que tiene sus propios rangos dentro de este.
 En este lab [nos pide](AWS-labs-oficiales/Lab1-IntroductiontoVLC/Capturas/3.png) que creemos dentro de la VPC una subred pública _(10.0.25.0/24)_ y una privada _(10.0.50.0/24)_. En el bloque que en este caso es el _10.0.0.0/16_. Con la puerta de enlace en una sola **Zona de disponibilidad**. Y sin ningún punto de enlace. [Todo esto con el asistente](AWS-labs-oficiales/Lab1-IntroductiontoVLC/Capturas/4.png. Después de esto nos pide que copiemos el _ID de la VPC_ y lo peguemos en un editor de texto.
 
 ## Como segundo objetivo, nos anima a explorar la VPC.
+
 Yendo a esta y [observando sus diferentes características](AWS-labs-oficiales/Lab1-IntroductiontoVLC/Capturas/5.png). Viendo por ejemplo su puerta de enlace. La puerta de enlace de internet(**Internet Gateway**) conecta la VPC a Internet.
 Ahora nos dice que vayamos a [Subredes](AWS-labs-oficiales/Lab1-IntroductiontoVLC/Capturas/6.png). **Las subredes** existen únicamente en una zona de disponibilidad, y tiene un rango o intervalo de direcciones IP.
 Si hacemos clic a una subred, veremos que cada una tiene un ID único, y que cada subred tiene 251 IP disponibles de 256 ya que las otras 5 están reservadas para: dirección de red, router vlc, dns de Amazon, una para futuro uso y  direcciónn de broadcast.
