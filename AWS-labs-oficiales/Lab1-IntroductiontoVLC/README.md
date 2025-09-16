@@ -6,7 +6,7 @@ Así repaso yo también un poco que desde verano que no miro nada de esto.
 
 ·**Una VPC** es una nube privada, donde los clientes pueden hacer lo que podrían hacer en una nube privada normal, pero esta nube está alojada en la nube.
 
-<ins> Diferencias entre Private Cloud(Nube privada) vs Virtual Private Cloud(Nube Privada Virtual)</ins>
+<ins> **Diferencias entre Private Cloud(Nube privada) vs Virtual Private Cloud(Nube Privada Virtual)** </ins>
 
 ·**Una nube privada** es una infraestructura dedicada a una sola organización. Esta puede ser on-premise(en tu hardware físico) o alojada por un tercero, pero esta **no se comparte con nadie**, es de un tenedor. Tu te ocupas completamente de el mantenimiento, el costo es elevado y tienes el control total.
 ·**La Virtual Private Cloud** es una nube privada pero está aislada dentro de una nube pública. Tu red es privada pero el hardware **es compartido**, es de múltiples tenedores(diferentes empresas, etc).
