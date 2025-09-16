@@ -1,4 +1,4 @@
-# aws-cloud-practitioner-labs
+# AWS-Cloud-Practitioner-Labs
 # AWS-labs: 
 Labs propios para practicar. Clica encima uno para acceder.
 ## [Lab 1- S3-bucket: Crear un bucket S3 en AWS](./AWS-labs/lab-1-s3-bucket)
