@@ -1,6 +1,6 @@
 ## Lab 1-S3-bucket: Crear un bucket S3 en AWS
 
-#Objetivo
+#Objetivo:
 Aprender a crear un bucket en S3 y subir un archivo
 
 ##Pasos
