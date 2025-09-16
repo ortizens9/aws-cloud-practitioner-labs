@@ -2,7 +2,6 @@
 Acabo de hacer un Lab de Amazon llamado [_“Introduction to Amazon VPC”_](/AWS-labs-oficiales/Lab1-IntroductiontoVLC/Capturas/2.png).
 Para que tanto vosotros como yo, vayamos entendiendo qué hacemos y qué nos pide y qué estamos viendo. Que ya de por si nos da unas instrucciones. Voy a explicar mejor algunos conceptos.
 
-Así repaso yo también un poco que desde verano que no miro nada de esto.
 ## El primer objetivo de este lab es crear la VPC con el asistente de VPC
 
 ·**Una VPC** es una nube privada, donde los clientes pueden hacer lo que podrían hacer en una nube privada normal, pero esta nube está alojada en la nube.
