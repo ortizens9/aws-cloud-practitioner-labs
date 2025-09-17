@@ -16,3 +16,9 @@ Labs de Skill builder.
 Nos introduce y explica lo más importante de una VPC: Gateways, tablas de enrutamiento, ACLs. Y diferenciamos una Private Cloud de una VPC.
 ## [Lab 2- Introduction to AWS IAM](./AWS-labs-oficiales/Lab2-IntroductiontoIAM)
 Laboratorio oficial que nos da la información principal para operar con el servicio AWS Identity and Access Management. Permisos, JSON, roles...
+
+## Aviso Legal
+
+Este repositorio contiene mis prácticas personales.  
+Todos los derechos reservados.  
+No está autorizado el uso, copia, distribución o modificación sin mi permiso explícito.
