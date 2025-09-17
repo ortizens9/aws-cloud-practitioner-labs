@@ -14,5 +14,5 @@ Creamos instancias diferentes con mensajes diferentes, usamos el ALB y ASG. Fina
 Labs de Skill builder.
 ## [Lab 1- Introduction to Amazon VLC](./AWS-labs-oficiales/Lab1-IntroductiontoVLC)
 Nos introduce y explica lo más importante de una VPC: Gateways, tablas de enrutamiento, ACLs. Y diferenciamos una Private Cloud de una VPC.
-## [Lab 2- Introduction to IAM](./AWS-labs-oficiales/Lab2-IntroductiontoIAM)
-Lab básico que nos da la información principal sobre el servicio AWS Identity and Access Management.
+## [Lab 2- Introduction to AWS IAM](./AWS-labs-oficiales/Lab2-IntroductiontoIAM)
+Laboratorio que nos da la información principal para operar con el servicio AWS Identity and Access Management.
