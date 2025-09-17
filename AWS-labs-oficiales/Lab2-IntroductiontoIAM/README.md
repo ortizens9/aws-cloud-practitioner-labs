@@ -1,4 +1,4 @@
-# [Introduction to AWS Identity and Access Management (IAM)](/AWS-labs-oficiales/Lab2-IntroductiontoIAM/Capturas/0.png)
+# [Introduction to AWS Identity and Access Management (IAM)](/AWS-labs-oficiales/Lab2-IntroductiontoIAM/Capturas/00.png)
 
 Antes de ponerme a explicar el lab, voy a explicar de forma corta en qué consiste IAM. Es un servicio que nos ayuda a controlar quién y a qué accede en la nube de AWS. Es el que asigna quien entra y qué puede tocar o ver(Permisos para usuarios, roles o servicios).
 Podemos tener usuarios individuales dentro, que no formen parte de ningún grupo como un administrador.
