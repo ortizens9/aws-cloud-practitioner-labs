@@ -2,14 +2,23 @@
 
 1.**Lanzar 2 instancias EC2 diferentes**
 
--Antes que nada vamos a crear unos textos diferentes para [una instancia y otra](/AWS-labs/lab-4-ELB+ASG//Capturas/31.png).
-  
--Vamos al servicio EC2 en nuestra cuenta IAM en la consola AWS y hacemos clic en [Lanzar instancias](/AWS-labs/lab-4-ELB+ASG//Capturas/1.png) de Ubuntu server 24.04. Le damos un nombre "Mi instancia 1".
- La vamos a crear sin par de claves pese a que ya sabemos que no es lo recomendado.
-Nuevo grupo de seguridad. Activamos permitir el tráfico HTTP. Le damos a "detalles avanzados", vamos donde dice Datos de usuario y pegamos [el texto que hemos creado antes](/AWS-labs/lab-4-ELB+ASG/Capturas/2.png).-> Lanzar instancia.
- Y ahora repetimos el proceso con otra, instancia llamada "Mi instancia 2", pero añadiendo ésta al mismo grupo de seguridad que la primera "launch-wizard-3.
- Y en esta le ponemos el otro texto.
-[Comprobamos que funcionan](/AWS-labs/lab-4-ELB+ASG/Capturas/3.png). Copiando las direcciones IP públicas.(Una vez en funcionamiento)
+![una instancia y otra](/AWS-labs/lab-4-ELB+ASG//Capturas/31.png)
+
+-Antes que nada vamos a crear unos textos diferentes para una instancia y otra.
+
+![Lanzar instancias](/AWS-labs/lab-4-ELB+ASG//Capturas/1.png)
+
+-Vamos al servicio EC2 en nuestra cuenta IAM en la consola AWS y hacemos clic en lanzar instancias de Ubuntu server 24.04. Le damos un nombre "Mi instancia 1".
+La vamos a crear sin par de claves pese a que ya sabemos que no es lo recomendado.
+
+[el texto que hemos creado antes](/AWS-labs/lab-4-ELB+ASG/Capturas/2.png)
+
+-Nuevo grupo de seguridad. Activamos permitir el tráfico HTTP. Le damos a "detalles avanzados", vamos donde dice Datos de usuario y pegamos el texto que hemos creado antes-> Lanzar instancia.
+Y ahora repetimos el proceso con otra, instancia llamada "Mi instancia 2", pero añadiendo ésta al mismo grupo de seguridad que la primera "launch-wizard-3. Y en esta le ponemos el otro texto.
+
+![Comprobamos que funcionan](/AWS-labs/lab-4-ELB+ASG/Capturas/3.png)
+
+Comprobamos que funcionan. Copiando las direcciones IP públicas.(Una vez en funcionamiento)
 
 2.**Creación ALB**
 
