@@ -20,8 +20,10 @@ Después de haber bajado AWS CLI para nuestro PC en mi caso Windows.
 
 -Nos conectamos vía SLI en powershell o cmd de nuestro PC, con el comando _aws configure --profile Pepe_. Nos preguntará por nuestra clave ID, por la clave de acceso secreta, la región donde nos queremos conectar:eu-west-3 y el formato de salida: json.
 ![esta respuesta](/AWS-labs/lab-3-iamclicloudwatch/Capturas/8.png)
+
 -Usamos el comando: _aws cloudwatch list-metrics --namespace AWS/EC2 --region eu-west-3 --profile Pepe --output table_ y nos daria esta respuesta.
 
 ![¿Qué es lo que pasaria si borrasemos los permisos?](/AWS-labs/lab-3-iamclicloudwatch/Capturas/9.png)
 ![este error](/AWS-labs/lab-3-iamclicloudwatch/Capturas/10.png)
+
 -¿Qué es lo que pasaria si borrasemos los permisos? Nos daría este error, de esta manera vemos que actuamos con el principio de mínimo privilegio. Que significa que la mejor práctica es dar los mínimos permisos posibles para tener mayor seguridad.
