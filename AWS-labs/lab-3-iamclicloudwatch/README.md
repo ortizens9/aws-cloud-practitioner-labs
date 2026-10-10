@@ -7,7 +7,7 @@
 Vamos al servicio IAM)->Personas->Crear persona->Le damos nombre 'pepe' (No es necesario darle acceso a la consola AWS).
 
 ![Creamos un nuevo grupo](/AWS-labs/lab-3-iamclicloudwatch/Capturas/3.png)
-![CloudWatchReadOnlyAccess](/AWS-labs/lab-3-iamclicloudwatch/Capturas/4.png).
+![CloudWatchReadOnlyAccess](/AWS-labs/lab-3-iamclicloudwatch/Capturas/4.png)
 -Creamos un nuevo grupo crearemos un nuevo grupo y le adjuntamos los permisos que queremos que tenga este usuario. En este caso (CloudWatchReadOnlyAccess).
 
 ![Claves de acceso](/AWS-labs/lab-3-iamclicloudwatch/Capturas/5.png)
