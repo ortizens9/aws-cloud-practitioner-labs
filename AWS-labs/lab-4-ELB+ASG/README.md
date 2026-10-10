@@ -11,7 +11,7 @@
 -Vamos al servicio EC2 en nuestra cuenta IAM en la consola AWS y hacemos clic en lanzar instancias de Ubuntu server 24.04. Le damos un nombre "Mi instancia 1".
 La vamos a crear sin par de claves pese a que ya sabemos que no es lo recomendado.
 
-[el texto que hemos creado antes](/AWS-labs/lab-4-ELB+ASG/Capturas/2.png)
+![el texto que hemos creado antes](/AWS-labs/lab-4-ELB+ASG/Capturas/2.png)
 
 -Nuevo grupo de seguridad. Activamos permitir el tráfico HTTP. Le damos a "detalles avanzados", vamos donde dice Datos de usuario y pegamos el texto que hemos creado antes-> Lanzar instancia.
 Y ahora repetimos el proceso con otra, instancia llamada "Mi instancia 2", pero añadiendo ésta al mismo grupo de seguridad que la primera "launch-wizard-3. Y en esta le ponemos el otro texto.
