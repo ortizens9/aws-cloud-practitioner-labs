@@ -46,15 +46,39 @@ Y si lo refrescamos varias veces vemos como se van alternando las intancias, con
 
 3.**Plantilla de lanzamiento**
 
--En EC2 vamos a la izquierda en el mismo sitio donde dice instancias, hay un lugar que dice [Plantillas de lanzamiento](/AWS-labs/lab-4-ELB+ASG/Capturas/15.png), vamos a crear una. Le damos de nombre [Plantilla-Lab4](/AWS-labs/lab-4-ELB+ASG/Capturas/16.png), seleccionamos el tipo de AMI que hemos usado para crear las instancias: [Ubuntu server](/AWS-labs/lab-4-ELB+ASG/Capturas/17.png). Y tipo de servidor t2.micro(de capa gratuita). De grupo de seguridad el "launch-wizard-3". Y pegamos el texto de datos de usuario anterior.
+![Plantillas de lanzamiento](/AWS-labs/lab-4-ELB+ASG/Capturas/15.png)
+![Plantilla-Lab4](/AWS-labs/lab-4-ELB+ASG/Capturas/16.png)
+![Ubuntu server](/AWS-labs/lab-4-ELB+ASG/Capturas/17.png)
+
+-En EC2 vamos a la izquierda en el mismo sitio donde dice instancias, hay un lugar que dice Plantillas de lanzamiento, vamos a crear una. Le damos de nombre "Plantilla-Lab4", seleccionamos el tipo de AMI que hemos usado para crear las instancias: Ubuntu Server. Y tipo de servidor t2.micro(de capa gratuita). De grupo de seguridad el "launch-wizard-3". Y pegamos el texto de datos de usuario anterior.
 
 4.**Auto Scaling Group!**
 
--Después de crear el template. Vamos a Grupos de [Auto Scaling](/AWS-labs/lab-4-ELB+ASG/Capturas/18.png) y creamos uno que vamos a llamar [ASG-Lab4](/AWS-labs/lab-4-ELB+ASG/Capturas/19.png). Seleccionamos Plantilla-Lab4 como plantilla de lanzamiento. Ponemos [2 subredes diferentes](/AWS-labs/lab-4-ELB+ASG/Capturas/20.png) como zona de disponibilidad(para alta disponibilidad). La asociamos a un balanceador existente y elegimos el grupo destino que hemos [creado antes TargetGroupLab4](/AWS-labs/lab-4-ELB+ASG/Capturas/21.png). Activamos las [comprobaciones de estado de ELB](/AWS-labs/lab-4-ELB+ASG/Capturas/22.png). [Configuramos el tamaño del grupo](/AWS-labs/lab-4-ELB+ASG/Capturas/23.png): de capacidad deseada 2, de mínima capacidad 1 y de máxima 3. Seleccionamos [una política de escalado de seguimiento de destino](/AWS-labs/lab-4-ELB+ASG/Capturas/24.png)(Target Tracking Policy), tipo de métrica  Utilización de CPU y como valor destino 70%. Todo lo demás, siguiente y siguiente.
+![Auto Scaling](/AWS-labs/lab-4-ELB+ASG/Capturas/18.png)
+![ASG-Lab4](/AWS-labs/lab-4-ELB+ASG/Capturas/19.png)
+![2 subredes diferentes](/AWS-labs/lab-4-ELB+ASG/Capturas/20.png)
+![creado antes TargetGroupLab4](/AWS-labs/lab-4-ELB+ASG/Capturas/21.png)
+
+-Después de crear el template. Vamos a Grupos de Auto Scaling y creamos uno que vamos a llamar "ASG-Lab4". Seleccionamos Plantilla-Lab4 como plantilla de lanzamiento. Ponemos 2 subredes diferentes como zona de disponibilidad(para alta disponibilidad). La asociamos a un balanceador existente y elegimos el grupo destino que hemos creado antes "TargetGroupLab4".
+
+![comprobaciones de estado de ELB](/AWS-labs/lab-4-ELB+ASG/Capturas/22.png)
+![Configuramos el tamaño del grupo](/AWS-labs/lab-4-ELB+ASG/Capturas/23.png)
+![una política de escalado de seguimiento de destino](/AWS-labs/lab-4-ELB+ASG/Capturas/24.png)
+
+-Activamos las comprobaciones de estado de ELB. Configuramos el tamaño del grupo: de capacidad deseada 2, de mínima capacidad 1 y de máxima 3. Seleccionamos una política de escalado de seguimiento de destino(Target Tracking Policy), tipo de métrica  Utilización de CPU y como valor destino 70%. Todo lo demás, siguiente y siguiente.
 Ahora Launch Template crea 2 instancias nuevas que sustituyen a las que ya teníamos y se registrarán en el Target Group del ALB. Y lo que pasará es que si la CPU supera el 70%, el ASH añadirá otra instancia automáticamente.
 
 5.**Instance connect**
 
--Una vez configurado si voy a una de mis instancias y la selecciono, puedo darle donde dice conectar, una vez [nos conectemos con IP pública](/AWS-labs/lab-4-ELB+ASG/Capturas/25.png) podremos entrar vía Instance Connect. [Una vez dentro](/AWS-labs/lab-4-ELB+ASG/Capturas/26.png) hacemos un _sudo apt-get update && sudo apt-get install_ -y _stress-ng_. Una vez tengamos instalado stress-ng, lo ejecutamos [durante 5 minutos](/AWS-labs/lab-4-ELB+ASG/Capturas/28.png) con el comando _stress-ng --cpu 1 --timeout 300s_. Esto hará que a parte de las instancias que tenemos [se creará otra más](/AWS-labs/lab-4-ELB+ASG/Capturas/29.png)(se escalará a 3). Se autoescalará debido a stress-ng porque superará el 70% de CPU.
+![nos conectemos con IP pública](/AWS-labs/lab-4-ELB+ASG/Capturas/25.png)
+![Una vez dentro](/AWS-labs/lab-4-ELB+ASG/Capturas/26.png)
+
+-Una vez configurado si voy a una de mis instancias y la selecciono, puedo darle donde dice conectar, una vez nos conectemos con IP pública y podremos entrar vía Instance Connect. Una vez dentro hacemos un _sudo apt-get update && sudo apt-get install_ -y _stress-ng_.
+
+![durante 5 minutos](/AWS-labs/lab-4-ELB+ASG/Capturas/28.png)
+![se creará otra más](/AWS-labs/lab-4-ELB+ASG/Capturas/29.png)
+![se creará otra más](/AWS-labs/lab-4-ELB+ASG/Capturas/29.png)
+
+-Una vez tengamos instalado stress-ng, lo ejecutamos durante 5 minutos con el comando _stress-ng --cpu 1 --timeout 300s_. Esto hará que a parte de las instancias que tenemos se creará otra más(se escalará a 3). Se autoescalará debido a stress-ng porque superará el 70% de CPU.
 
 #Con esto creamos un servicio altamente disponible con EC2, ELB y ASG.
