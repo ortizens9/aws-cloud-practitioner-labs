@@ -4,7 +4,7 @@
 ![servicio IAM](/AWS-labs/lab-3-iamclicloudwatch/Capturas/1.png)
 !['pepe'](/AWS-labs/lab-3-iamclicloudwatch/Capturas/2.png)
 -Para ello vamos desde nuestro usuario root, a la consola AWS.
-Vamos al servicio IAM)->Personas->Crear persona->Le damos nombre 'pepe'.(No es necesario darle acceso a la consola AWS).
+Vamos al servicio IAM)->Personas->Crear persona->Le damos nombre 'pepe' (No es necesario darle acceso a la consola AWS).
 
 ![Creamos un nuevo grupo](/AWS-labs/lab-3-iamclicloudwatch/Capturas/3.png)
 ![CloudWatchReadOnlyAccess](/AWS-labs/lab-3-iamclicloudwatch/Capturas/4.png).
