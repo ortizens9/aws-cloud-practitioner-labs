@@ -18,13 +18,31 @@ Y ahora repetimos el proceso con otra, instancia llamada "Mi instancia 2", pero 
 
 ![Comprobamos que funcionan](/AWS-labs/lab-4-ELB+ASG/Capturas/3.png)
 
-Comprobamos que funcionan. Copiando las direcciones IP públicas.(Una vez en funcionamiento)
+-Comprobamos que funcionan. Copiando las direcciones IP públicas.(Una vez en funcionamiento)
 
 2.**Creación ALB**
 
--En EC2 donde dice Equilibrio de carga-> Balanceadores de carga-> Crear balanceador de carga. Y le damos a ALB(Application Load Balancer/Balanceador de carga de aplicaciones). Le voy a dar de nombre [ALBLab4](/AWS-labs/lab-4-ELB+ASG/Capturas/4.png). Estará expuesto a Internet y de IPv4. Y vamos a seleccionar [us-east-1a y us-east-1b](/AWS-labs/lab-4-ELB+ASG/Capturas/30.png)(mínimo).
-Donde dice grupos de seguridad(en la creación del ALB, le damos a "cree un nuevo grupo de seguridad", esto nos abrirá otra pestaña donde configurar este grupo. Le pondremos de nombre Gruposeguridad-ALB-Lab4. Esto permitira el HTTP dentro del ALB. Creamos la regla que será una de [entrada de HTTP](/AWS-labs/lab-4-ELB+ASG/Capturas/5.png) para 0.0.0.0/0(Cualquier origen). Unimos el ALB a ese grupo creado. Y luego donde dice Agentes de escucha y direccionamiento->Crear [un grupo de destino](/AWS-labs/lab-4-ELB+ASG/Capturas/9.png)(también se nos abrirá otra ventana nueva). Le damos el nombre ["TargetGroupLab4"](/AWS-labs/lab-4-ELB+ASG/Capturas/10.png) y lo dejamos tal cual está, con HTTP.
-Incluimos como pendientes las [2 instancias](/AWS-labs/lab-4-ELB+ASG/Capturas/11.png) que hemos creado, lo creamos y una vez creado volvemos otra vez a la pestaña por donde estabamos creando el ALB y ponemos el TargetGroup4 como [grupo de destino](/AWS-labs/lab-4-ELB+ASG/Capturas/6.png). Copiamos el nombre del ALB: ALBLab4-493378900.us-east-1.elb.amazonaws.com. Y si lo refrescamos varias veces vemos como se van alternando las intancias, con los diferentes textos.[Texto 1](/AWS-labs/lab-4-ELB+ASG/Capturas/13.png) y [texto 2](/AWS-labs/lab-4-ELB+ASG/Capturas/14.png)
+![ALBLab4](/AWS-labs/lab-4-ELB+ASG/Capturas/4.png)
+![us-east-1a y us-east-1b](/AWS-labs/lab-4-ELB+ASG/Capturas/30.png)
+
+-En EC2 donde dice Equilibrio de carga-> Balanceadores de carga-> Crear balanceador de carga. Y le damos a ALB(Application Load Balancer/Balanceador de carga de aplicaciones). Le voy a dar de nombre ALBLab4. Estará expuesto a Internet y de IPv4. Y vamos a seleccionar us-east-1a y us-east-1b (mínimo).
+Donde dice grupos de seguridad(en la creación del ALB, le damos a "cree un nuevo grupo de seguridad", esto nos abrirá otra pestaña donde configurar este grupo. Le pondremos de nombre Gruposeguridad-ALB-Lab4. Esto permitira el HTTP dentro del ALB.
+
+![entrada de HTTP](/AWS-labs/lab-4-ELB+ASG/Capturas/5.png)
+![un grupo de destino](/AWS-labs/lab-4-ELB+ASG/Capturas/9.png)
+!["TargetGroupLab4"](/AWS-labs/lab-4-ELB+ASG/Capturas/10.png)
+ 
+-Creamos la regla que será una de entrada de HTTP para 0.0.0.0/0(Cualquier origen). Unimos el ALB a ese grupo creado. Y luego donde dice Agentes de escucha y direccionamiento->Crear un grupo de destino (también se nos abrirá otra ventana nueva). Le damos el nombre TargetGroupLab4 y lo dejamos tal cual está, con HTTP.
+
+![2 instancias](/AWS-labs/lab-4-ELB+ASG/Capturas/11.png)
+![grupo de destino](/AWS-labs/lab-4-ELB+ASG/Capturas/6.png)
+
+Incluimos como pendientes las 2 instancias que hemos creado, lo creamos y una vez creado volvemos otra vez a la pestaña por donde estabamos creando el ALB y ponemos el TargetGroup4 como grupo de destino. Copiamos el nombre del ALB: ALBLab4-493378900.us-east-1.elb.amazonaws.com.
+
+![Texto 1](/AWS-labs/lab-4-ELB+ASG/Capturas/13.png)
+![texto 2](/AWS-labs/lab-4-ELB+ASG/Capturas/14.png)
+
+Y si lo refrescamos varias veces vemos como se van alternando las intancias, con los diferentes textos.
 
 3.**Plantilla de lanzamiento**
 
