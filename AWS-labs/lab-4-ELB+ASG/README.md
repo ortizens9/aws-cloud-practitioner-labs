@@ -65,7 +65,7 @@ Y si lo refrescamos varias veces vemos como se van alternando las intancias, con
 ![Configuramos el tamaño del grupo](/AWS-labs/lab-4-ELB+ASG/Capturas/23.png)
 ![una política de escalado de seguimiento de destino](/AWS-labs/lab-4-ELB+ASG/Capturas/24.png)
 
--Activamos las comprobaciones de estado de ELB. Configuramos el tamaño del grupo: de capacidad deseada 2, de mínima capacidad 1 y de máxima 3. Seleccionamos una política de escalado de seguimiento de destino(Target Tracking Policy), tipo de métrica  Utilización de CPU y como valor destino 70%. Todo lo demás, siguiente y siguiente.
+-Activamos las comprobaciones de estado de ELB. Configuramos el tamaño del grupo: de capacidad deseada 2, de mínima capacidad 1 y de máxima 3. Seleccionamos una política de escalado de seguimiento de destino (Target Tracking Policy), tipo de métrica  Utilización de CPU y como valor destino 70%. Todo lo demás, siguiente y siguiente.
 Ahora Launch Template crea 2 instancias nuevas que sustituyen a las que ya teníamos y se registrarán en el Target Group del ALB. Y lo que pasará es que si la CPU supera el 70%, el ASH añadirá otra instancia automáticamente.
 
 5.**Instance connect**
