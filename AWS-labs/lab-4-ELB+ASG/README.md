@@ -25,7 +25,7 @@ Y ahora repetimos el proceso con otra, instancia llamada "Mi instancia 2", pero 
 ![ALBLab4](/AWS-labs/lab-4-ELB+ASG/Capturas/4.png)
 ![us-east-1a y us-east-1b](/AWS-labs/lab-4-ELB+ASG/Capturas/30.png)
 
--En EC2 donde dice Equilibrio de carga-> Balanceadores de carga-> Crear balanceador de carga. Y le damos a ALB(Application Load Balancer/Balanceador de carga de aplicaciones). Le voy a dar de nombre ALBLab4. Estará expuesto a Internet y de IPv4. Y vamos a seleccionar us-east-1a y us-east-1b (mínimo).
+-En EC2 donde dice Equilibrio de carga-> Balanceadores de carga-> Crear balanceador de carga. Y le damos a ALB (Application Load Balancer/Balanceador de carga de aplicaciones). Le voy a dar de nombre ALBLab4. Estará expuesto a Internet y de IPv4. Y vamos a seleccionar us-east-1a y us-east-1b (mínimo).
 Donde dice grupos de seguridad(en la creación del ALB, le damos a "cree un nuevo grupo de seguridad", esto nos abrirá otra pestaña donde configurar este grupo. Le pondremos de nombre Gruposeguridad-ALB-Lab4. Esto permitira el HTTP dentro del ALB.
 
 ![entrada de HTTP](/AWS-labs/lab-4-ELB+ASG/Capturas/5.png)
