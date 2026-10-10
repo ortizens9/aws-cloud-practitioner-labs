@@ -41,6 +41,8 @@ Cada subred está asignada a una tabla de enrutamiento que especifica las rutas 
 Para filtrar el tráfico, las subredes tienen algo llamado **Access Control List**(ACLs), que permiten y deniegan. Estas por defecto permiten todo el tráfico entrante y saliente.
 
 _No se puede acceder directamente a las subredes privadas desde Internet_, estas tienen una capa adicional de seguridad.
-Existe algo llamado puertas de enlace de direcciones de red(NAT) o **NAT gateways**, que permiten que los recursos que están dentro de la subred privada [tengan conexión a internet](/AWS-labs-oficiales/Lab1-IntroductiontoVLC/Capturas/8.png).
+Existe algo llamado puertas de enlace de direcciones de red(NAT) o **NAT gateways**, que permiten que los recursos que están dentro de la subred privada tengan conexión a internet.
+
+![tengan conexión a internet](/AWS-labs-oficiales/Lab1-IntroductiontoVLC/Capturas/8.png).
 
 Después de estos pasos, realizamos un cuestionario relacionado con esto para ver si lo hemos entendido.
