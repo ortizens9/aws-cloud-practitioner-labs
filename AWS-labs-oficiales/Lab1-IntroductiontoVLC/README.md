@@ -43,6 +43,6 @@ Para filtrar el tráfico, las subredes tienen algo llamado **Access Control List
 _No se puede acceder directamente a las subredes privadas desde Internet_, estas tienen una capa adicional de seguridad.
 Existe algo llamado puertas de enlace de direcciones de red(NAT) o **NAT gateways**, que permiten que los recursos que están dentro de la subred privada tengan conexión a internet.
 
-![tengan conexión a internet](/AWS-labs-oficiales/Lab1-IntroductiontoVLC/Capturas/8.png).
+![tengan conexión a internet](/AWS-labs-oficiales/Lab1-IntroductiontoVLC/Capturas/8.png)
 
 Después de estos pasos, realizamos un cuestionario relacionado con esto para ver si lo hemos entendido.
