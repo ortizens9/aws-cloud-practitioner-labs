@@ -32,7 +32,7 @@ Yendo a esta y observando sus diferentes características. Viendo por ejemplo su
 ![Subredes](/AWS-labs-oficiales/Lab1-IntroductiontoVLC/Capturas/6.png)
 
 Ahora nos dice que vayamos a Subredes. **Las subredes** existen únicamente en una zona de disponibilidad, y tiene un rango o intervalo de direcciones IP.
-Si hacemos clic a una subred, veremos que cada una tiene un ID único, y que cada subred tiene 251 IP disponibles de 256 ya que las otras 5 están reservadas para: dirección de red, router vlc, dns de Amazon, una para futuro uso y  direcciónn de broadcast.
+Si hacemos clic a una subred, veremos que cada una tiene un ID único, y que cada subred tiene 251 IP disponibles de 256 ya que las otras 5 están reservadas para: dirección de red, router vlc, dns de Amazon, una para futuro uso y  dirección de broadcast.
 
 Cada subred está asignada a una tabla de enrutamiento que especifica las rutas que sigue el tráfico que sale de la subred. Indica hacia dónde se debe dirigir el tráfico en función del destino. Estas no filtran el tráfico, solo lo dirigen.
 
