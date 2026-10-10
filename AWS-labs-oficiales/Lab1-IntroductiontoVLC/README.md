@@ -23,7 +23,7 @@ Cada VPC tiene su bloque CIDR(Enrutamiento entre dominios sin clase) de IPs priv
 
 En este lab nos pide que creemos dentro de la VPC una subred pública _(10.0.25.0/24)_ y una privada _(10.0.50.0/24)_. En el bloque que en este caso es el _10.0.0.0/16_. Con la puerta de enlace en una sola **Zona de disponibilidad**. Y sin ningún punto de enlace. Todo esto con el asistente. Después de esto nos pide que copiemos el _ID de la VPC_ y lo peguemos en un editor de texto.
 
-## Como segundo objetivo, nos anima a explorar la VPC.
+## Como segundo objetivo, nos anima a explorar la VPC
 
 ![observando sus diferentes características](/AWS-labs-oficiales/Lab1-IntroductiontoVLC/Capturas/5.png)
 
