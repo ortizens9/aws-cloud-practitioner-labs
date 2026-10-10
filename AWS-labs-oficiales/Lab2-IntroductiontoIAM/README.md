@@ -6,8 +6,8 @@ Antes de ponerme a explicar el lab, voy a explicar de forma corta en qué consis
 Podemos tener usuarios individuales dentro, que no formen parte de ningún grupo como un administrador.
 Organizar los usuarios en grupos, para darles permisos conjuntamente. Darle permisos a roles o definir estos permisos escritos en JSON.
 
-## Pues vamos allá. Este lab está dividido en 3 tareas.
-## ·La primera dice: Exploración de usuarios y grupos.
+## Pues vamos allá. Este lab está dividido en 3 tareas
+## ·La primera dice: Exploración de usuarios y grupos
 
 ![Personas](/AWS-labs-oficiales/Lab2-IntroductiontoIAM/Capturas/1.png)
 ![no tiene permisos](/AWS-labs-oficiales/Lab2-IntroductiontoIAM/Capturas/2.png)
@@ -33,7 +33,7 @@ Volvemos a **Grupos de personas** y seleccionamos _S3-Support_. Este tiene una p
 Y finalmente miramos los permisos de _EC2-Admin_ y este grupo tiene una política en línea o según veo una política de cliente insertado que se hace llamar “_EC2-Admin-Policy_”. Esta, según nos muestra **nos da permiso para parar y empezar instancias EC2**.
 Para que lo recordemos nos vuelve a repetir qué hace cada grupo y además en qué grupo deberían ir cada uno de los 3 usuarios. Nos dice que el user-1 debe ir a _S3-Support_(Acceso sólo lectura S3), el user-2 a _EC2-Support_(Acceso sólo lectura EC2) y el user-3 a _EC2-Admin_(Parar/Iniciar/Ver instancias EC2).
 ## ·La segunda tarea nos hace colocar [como hemos dicho antes](/AWS-labs-oficiales/Lab2-IntroductiontoIAM/Capturas/11.png), los usuarios en los grupos.
- **·La tercera tarea** nos hace abrir en un una pestaña privada en mi caso Safari. Y **pegamos la URL** que se denomina "URL de inicio de sesión para los usuarios IAM de esta cuenta":
+## **·La tercera tarea** nos hace abrir en un una pestaña privada en mi caso Safari. Y **pegamos la URL** que se denomina "URL de inicio de sesión para los usuarios IAM de esta cuenta":
 
 ![URL de inicio de sesión para los usuarios IAM de esta cuenta](/AWS-labs-oficiales/Lab2-IntroductiontoIAM/Capturas/12.png)
 ![este enlace](/AWS-labs-oficiales/Lab2-IntroductiontoIAM/Capturas/13.png)
