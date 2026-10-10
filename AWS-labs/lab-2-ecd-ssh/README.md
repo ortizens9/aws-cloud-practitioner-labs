@@ -4,7 +4,7 @@
 1. **Lanzar instancia EC2**
 
 -Para ello con nuestro usuario IAM(creado con todos los permisos) nos vas al servicio EC2, en EC2 clicamos en lanzar instancias EC2. ![lanzar Instancias EC2](/AWS-labs/lab-2-ecd-ssh/Capturas/1.png) ![Amazon Linux/t2 micro](/AWS-labs/lab-2-ecd-ssh/Capturas/2.png)
-Escogemos una sencilla, en este caso una Amazon Linux/t2_micro  le creamos una clave RSA y de formato .pem ya que estamos desde Windows.
+-Escogemos una sencilla, en este caso una Amazon Linux/t2_micro  le creamos una clave RSA y de formato .pem ya que estamos desde Windows.
 Permitimos el acceso de tráfico SSH y la creamos. ![Permitimos el acceso de trático SSH](/AWS-labs/lab-2-ecd-ssh/Capturas/4.png)
 
 2. **Conexión SSH**
